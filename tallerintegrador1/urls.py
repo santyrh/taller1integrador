@@ -5,7 +5,7 @@ from rest_framework import routers
 from Ultrasonic import views
 
 router = routers.DefaultRouter()
-router.register(r'Ultrasonic', views.UltrasonicViewSet)
+router.register(r'measures', views.UltrasonicViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
